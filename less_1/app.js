@@ -216,9 +216,9 @@ function renderUsers(users) {
 function generatorUserHtml(movies) {
     return `
         <div class="user">
-        <img src="${movies.backdrop_path}" alt="" />
-        <h2>${movies.first_name} ${movies.last_name}</h2>
-        <h5>${movies.email}</h5>
+        <img src="https://image.tmdb.org/t/p/w500/${movies.backdrop_path}" alt="" />
+        <h2>${movies.original_title}</h2>
+        <h5>${movies.vote_average}</h5>
     </div>
     `;
 }
