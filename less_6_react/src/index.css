@@ -1,0 +1,94 @@
+body {
+    background-color: #f9f9f9;
+    padding: 24px;
+}
+
+.app {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.app .search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    height: 32px;
+    margin-bottom: 32px;
+}
+
+.app .search input {
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 24px;
+}
+
+.app .search button {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #2191ff;
+    color: white;
+    text-transform: capitalize;
+}
+
+.app .content {
+    border: 1px solid gray;
+    padding: 0 0px 24px 0px;
+}
+
+.app .content .list {
+    padding: 24px;
+}
+
+.app .content label {
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 32px;
+}
+
+.app .content .list .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.app .content .list .item .item_text {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.app .content .list .item .item_icon {
+    margin-left: 8px;
+}
+
+.app .content .list .item .item_value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app .content .list .item .item_handle {
+    display: flex;
+    justify-items: center;
+    gap: 12px;
+    text-transform: capitalize;
+}
+
+.app .content .list .item .item_delete {
+    display: flex;
+    justify-items: center;
+    gap: 12px;
+    text-transform: capitalize;
+    cursor: pointer;
+    min-width: 120px;
+}
