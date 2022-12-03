@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Search from "./Search";
 import Content from "./Content";
+import Modal from "./Modal";
 
 /**
  * item:
@@ -12,12 +13,13 @@ import Content from "./Content";
 
 function App() {
   // state
+  const [modal, setModal] = useState(false);
   const [todo, setTodo] = useState([
-    // { content: "todo 1", status: true },
-    // { content: "todo 2", status: true },
-    // { content: "todo 3", status: false },
-    // { content: "todo 4", status: true },
-    // { content: "todo 5", status: false },
+    { content: "todo 1", status: true },
+    { content: "todo 2", status: true },
+    { content: "todo 3", status: false },
+    { content: "todo 4", status: true },
+    { content: "todo 5", status: false },
   ]);
 
   const [text, setText] = useState("");
@@ -78,6 +80,11 @@ function App() {
     setTodo(todoNews);
   };
 
+  const onDeletePrompt = (index) => {
+    setPickItem(index); 
+    setModal(true);
+  };
+
   const onDelete = (index) => {
     // update lại status của item hiện tại
     // toggle: true -> false, false -> true
@@ -118,10 +125,24 @@ function App() {
           todo,
           onSetPickItem,
           pickItem,
-          onDelete,
+          onDelete: onDeletePrompt,
           onUpdateStatus,
         }}
       />
+      
+      {/* confirm lại khi muốn xóa task todo */}
+      {modal && (
+        <Modal
+          callback={() => {
+            // console.log("callback::", pickItem);
+            onDelete(pickItem);
+            setModal(false);
+            setPickItem(undefined);
+          }}
+          content="Bạn có chắc chắn muốn xóa task này k?"
+          setActive={setModal}
+        />
+      )}
     </div>
   );
 }
