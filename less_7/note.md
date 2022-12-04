@@ -17,7 +17,7 @@
             };
 
             fetch("https://638b55067220b45d228d7abc.mockapi.io/task", requestOptions)
-            .then(response => response.text())
+            .then(response => response.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
             ```
@@ -29,7 +29,7 @@
             };
 
             fetch("https://638b55067220b45d228d7abc.mockapi.io/task", requestOptions)
-            .then(response => response.text())
+            .then(response => response.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
             ```
@@ -48,7 +48,7 @@
             };
 
             fetch("https://638b55067220b45d228d7abc.mockapi.io/task/1", requestOptions)
-            .then(response => response.text())
+            .then(response => response.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
             ```
@@ -60,7 +60,7 @@
             };
 
             fetch("https://638b55067220b45d228d7abc.mockapi.io/task/1", requestOptions)
-            .then(response => response.text())
+            .then(response => response.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));
             ```
