@@ -16,8 +16,9 @@
 
 - Extension: Material Icon Theme
 
-
 - Code demo:
     - trang login
-    - các trang con cần login mới xem đc
-    - các trang public
+    - các trang con cần login mới xem đc: ProfilePage
+    - các trang public: Home, About
+
+- BTVN: Thực hành lại bài code demo
