@@ -1,0 +1,13 @@
+- Chữa btvn: router
+- Buổi học:
+  - HD cài lib từ npm: axios, toast, nextui, ...
+  - Cấu hình Axios để call API thay fetch
+    - axios xịn hơn fetch 1 chút -> req, cancel, call nhiều req cùng 1 lúc,...
+  - CRUD: https://638b55067220b45d228d7abc.mockapi.io/task
+    - UI: nextui - https://www.npmjs.com/package/@nextui-org/react
+    - API: CRUD;
+      - C
+      - R
+      - U
+      - D
+- BTVN: làm lại bài demo buổi hnay.
